@@ -1,0 +1,2 @@
+@prefix ue: <https://universalevidence.com/ontology/> .
+<https://example.org/outcome> a ue:OutcomeMeasurement .

@@ -1,0 +1,65 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://universalevidence.com/ontology/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://universalevidence.com/vocab/states/FetalGrowthRestriction> a skos:Concept,
+        ns1:State ;
+    dcterms:created "2026-06-14"^^xsd:date ;
+    skos:altLabel "Fetal Growth Retardation" ;
+    skos:closeMatch <http://id.nlm.nih.gov/mesh/D048070> ;
+    skos:definition "A health state characterized by fetal growth restriction." ;
+    skos:exactMatch <http://id.nlm.nih.gov/mesh/D005317> ;
+    skos:inScheme <https://universalevidence.com/vocab/states/> ;
+    skos:prefLabel "Fetal growth restriction" ;
+    ns1:bearer <https://universalevidence.com/vocab/subjects/Population> ;
+    ns1:measuredBy <https://universalevidence.com/vocab/states/FetalWeight> .
+
+<https://universalevidence.com/vocab/states/FetalMacrosomia> a skos:Concept,
+        ns1:State ;
+    dcterms:created "2026-06-10"^^xsd:date ;
+    skos:definition "A condition of fetal overgrowth defined by birth weight greater than 4,000 grams, regardless of gestational age." ;
+    skos:exactMatch <http://id.nlm.nih.gov/mesh/D005320> ;
+    skos:inScheme <https://universalevidence.com/vocab/states/> ;
+    skos:prefLabel "Fetal macrosomia" ;
+    ns1:bearer <https://universalevidence.com/vocab/subjects/Population> ;
+    ns1:measuredBy <https://universalevidence.com/vocab/states/FetalWeight> .
+
+<https://universalevidence.com/vocab/states/FetalWeight> a skos:Concept,
+        ns1:Indicator ;
+    dcterms:created "2026-06-17"^^xsd:date ;
+    dcterms:source <https://www.isuog.org/resource/isuog-practice-guidelines-ultrasound-assessment-of-fetal-biometry-and-growth-pdf.html> ;
+    skos:altLabel "Estimated fetal weight" ;
+    skos:definition "The mass of a fetus in utero, usually estimated from prenatal ultrasound biometric measurements." ;
+    skos:exactMatch <http://id.nlm.nih.gov/mesh/D020567> ;
+    skos:inScheme <https://universalevidence.com/vocab/states/> ;
+    skos:prefLabel "Fetal weight" ;
+    skos:scopeNote "Used in assessing restricted or excessive fetal growth with gestational age, reference distributions and other clinical findings. The measures links indicate applicability to these conditions, not that a weight measurement alone diagnoses either or that both conditions coexist." ;
+    ns1:bearer <https://universalevidence.com/vocab/subjects/Population> ;
+    ns1:measures <https://universalevidence.com/vocab/states/FetalGrowthRestriction>,
+        <https://universalevidence.com/vocab/states/FetalMacrosomia> .
+
+<https://universalevidence.com/vocab/subjects/Population> a skos:Concept,
+        ns1:Subject ;
+    skos:closeMatch <https://socialscienceregistry.org/schema#Keyword_academics>,
+        <https://socialscienceregistry.org/schema#Keyword_adolescent_girls>,
+        <https://socialscienceregistry.org/schema#Keyword_adolescents>,
+        <https://socialscienceregistry.org/schema#Keyword_african_american_voters>,
+        <https://socialscienceregistry.org/schema#Keyword_african_americans>,
+        <https://socialscienceregistry.org/schema#Keyword_agent>,
+        <https://socialscienceregistry.org/schema#Keyword_agents>,
+        <https://socialscienceregistry.org/schema#Keyword_akan>,
+        <https://socialscienceregistry.org/schema#Keyword_alaska_native>,
+        <https://socialscienceregistry.org/schema#Keyword_conflict_affected_populations>,
+        <https://socialscienceregistry.org/schema#Keyword_consumer>,
+        <https://socialscienceregistry.org/schema#Keyword_consumers>,
+        <https://socialscienceregistry.org/schema#Keyword_elderly>,
+        <https://socialscienceregistry.org/schema#Keyword_elites>,
+        <https://socialscienceregistry.org/schema#Keyword_teenagers>,
+        <https://socialscienceregistry.org/schema#Keyword_youth> ;
+    skos:definition "Persons, households, and communities — human groups at any scale of aggregation. The bearer of health, nutritional, educational, economic, safety, and rights-related states. Corresponds to the P (Population) in PICO at the type level." ;
+    skos:inScheme <https://universalevidence.com/vocab/subjects/> ;
+    skos:prefLabel "Population" ;
+    skos:scopeNote "Individual, household, and community scales are collapsed here; the unit of analysis varies by study design, not by subject type." ;
+    skos:topConceptOf <https://universalevidence.com/vocab/subjects/> .
+

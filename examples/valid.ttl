@@ -1,0 +1,6 @@
+@prefix ue: <https://universalevidence.com/ontology/> .
+@prefix ex: <https://example.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+ex:state a ue:State; skos:prefLabel "Example state"; skos:inScheme ex:scheme; skos:definition "An illustrative state."; ue:bearer ex:subject.
+ex:subject a ue:Subject; skos:prefLabel "Example population"; skos:inScheme ex:subjects; skos:definition "An illustrative population.".
+ex:outcome a ue:OutcomeMeasurement; ue:ofState ex:state; ue:outcomeStatus "pre-specified".
