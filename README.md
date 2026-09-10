@@ -28,7 +28,7 @@ The ontology records associations and stated objectives; an evidence connection 
 
 The document identifier is <https://universalevidence.com/ontology/>. Terms retain stable IRIs beneath that namespace. The file can also be loaded directly, without a network connection. External alignment identifiers are references, not bundled external ontologies; no OWL imports are required.
 
-Specific concepts live in the [States thesaurus](https://github.com/SteveHedden/universalevidence-conditions-outcomes-thesaurus) and [Interventions thesaurus](https://github.com/SteveHedden/universalevidence-interventions-thesaurus). The States repository also carries Subject concepts; Indicators use a distinct class within that vocabulary. These companion repositories may remain private until their own release reviews finish.
+Specific concepts live in the [Conditions and Outcomes thesaurus](https://github.com/SteveHedden/universalevidence-conditions-outcomes-thesaurus) and [Interventions thesaurus](https://github.com/SteveHedden/universalevidence-interventions-thesaurus). The Conditions and Outcomes repository also carries Subject concepts; Indicators use a distinct class within that vocabulary. Both companion repositories are public.
 
 ## Validate data
 
